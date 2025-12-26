@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'myapp/indexstyle.css' %}">
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <p>
+        初めてウェブサイトを作るということで、2025年のM-1決勝ネタを文字起こししてみました。<br>
+        今年のM-1は（も）とても面白かったですね。
+    </p>
+    <ul>
+        <li><a href="{% url 'yarlens' %}">1組目　ヤーレンズ 「結婚」</a></li>
+        <li><a href="{% url 'mezon' %}">2組目　めぞん　「女友達」</a></li>
+        <li><a href="{% url 'kanamestone' %}">3組目　カナメストーン 「ダーツの旅」</a></li>
+        <li><a href="{% url 'evers1' %}">4組目　エバース 「ドライブデート」</a></li>
+        <li><a href="{% url 'shinkujessica' %}">5組目　真空ジェシカ 「ペーパードライバー講習」</a></li>
+        <li><a href="{% url 'yoneda2000' %}">6組目　ヨネダ2000 「バスケットボール」</a></li>
+        <li><a href="{% url 'takuro1' %}">7組目　たくろう 「リングアナ」</a></li>
+        <li><a href="{% url 'dondecollete1' %}">8組目　ドンデコルテ 「デジタルデトックス」</a></li>
+        <li><a href="{% url 'gokaicaptain' %}">9組目　豪快キャプテン 「小さいカバン」</a></li>
+        <li><a href="{% url 'mamatarte' %}">10組目　ママタルト 「初詣」</a></li>
+        <li><a href="{% url 'dondecollete2' %}">最終決戦　1組目　ドンデコルテ 「名物おじさん」</a></li>
+        <li><a href="{% url 'evers2' %}">最終決戦　2組目　エバース 「腹話術」</a></li>
+        <li><a href="{% url 'takuro2' %}">最終決戦　3組目　たくろう 「ビバリーヒルズ」</a></li>
+    </ul>
+</body>
+</html>
